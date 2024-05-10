@@ -1,9 +1,7 @@
 name: 'Terraform Plan + PR add comment'
 
 on:
-  pull_request:
-    branches: [main]
-    types: [opened, reopened]
+  workflow_dispatch:
 
 jobs:
   terraform:
