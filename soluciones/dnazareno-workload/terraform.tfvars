@@ -9,7 +9,6 @@ maquinasvirtuales = {
         size                = "Standard_F2"
         admin_username      = "mv1user"
         interface_name      = "weekly_aznic1"
-        interface_number    = 0
     }
     mv2 = {
         name                = "weeklymv2"
@@ -18,7 +17,6 @@ maquinasvirtuales = {
         size                = "Standard_F2"
         admin_username      = "mv2user"
         interface_name      = "weekly_aznic2"
-        interface_number    = 1
     } 
     mv3 = {
         name                = "weeklymv3"
@@ -27,6 +25,5 @@ maquinasvirtuales = {
         size                = "Standard_F2"
         admin_username      = "mv3user"
         interface_name      = "weekly_aznic3"
-        interface_number    = 2
     } 
   }
