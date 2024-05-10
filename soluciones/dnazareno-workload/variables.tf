@@ -16,7 +16,6 @@ variable "maquinasvirtuales" {
     size                = string
     admin_username      = string
     interface_name      = string
-    interface_number    = number
   }))
   default = {
     mv1 = {
@@ -26,7 +25,6 @@ variable "maquinasvirtuales" {
         size                = "Standard_F2"
         admin_username      = "adminuser"
         interface_name      = "aznic"
-        interface_number    = 0
     }
   }
 }
@@ -173,5 +171,5 @@ variable "lb_backend_address_pool_name" {
 
 variable "secret_password" {
   type = string
-  default = "123456"
+  default = "Abc@123"
 }

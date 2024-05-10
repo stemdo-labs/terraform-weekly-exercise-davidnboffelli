@@ -24,9 +24,3 @@ module "weekly_exercise" {
   location = var.location
   maquinasvirtuales = var.maquinasvirtuales
 }
-
-#resource "azurerm_storage_container" "tfstate" {
-#  name                  = "tfstateweekly"
-#  storage_account_name  = "sta1dnazareno"
-#  container_access_type = "private"
-#}
