@@ -32,4 +32,4 @@ jobs:
 
     - name: Terraform Init
       id: init
-      run: terraform -chdir=soluciones/dnazareno-workflow init
+      run: terraform -chdir=soluciones/dnazareno-workload init
