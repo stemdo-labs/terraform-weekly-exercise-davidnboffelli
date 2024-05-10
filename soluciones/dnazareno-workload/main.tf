@@ -15,10 +15,6 @@ terraform {
 
 provider "azurerm" {
   features {}
-#  subscription_id = ${{ secrets.SUBSCRIPTION_ID }}
-#  client_id       = ${{ secrets.CLIENT_ID }}
-#  client_secret   = ${{ secrets.CLIENT_SECRET }}
-#  tenant_id       = ${{ secrets.TENANT_ID }}
 }
 
 module "weekly_exercise" {
@@ -28,9 +24,3 @@ module "weekly_exercise" {
   location = var.location
   maquinasvirtuales = var.maquinasvirtuales
 }
-
-#resource "azurerm_storage_container" "tfstate" {
-#  name                  = "tfstateweekly"
-#  storage_account_name  = "sta1dnazareno"
-#  container_access_type = "private"
-#}
