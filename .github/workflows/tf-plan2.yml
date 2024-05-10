@@ -24,7 +24,8 @@ jobs:
     defaults:
       run:
         shell: bash
- 
+    permissions:
+      pull-requests: write 
     steps:
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
@@ -41,10 +42,7 @@ jobs:
       run: terraform -chdir=soluciones/dnazareno-workload plan -no-color
       continue-on-error: true
 
-    - name: Post Plan
-      #if: always() && github.ref != 'refs/heads/master' && (steps.plan.outcome == 'success' || steps.plan.outcome == 'failure')
-      uses: robburger/terraform-pr-commenter@v1
+    - uses: mshick/add-pr-comment@v2
       with:
-        commenter_type: plan
-        commenter_input: ${{ format('{0}{1}', steps.plan.outputs.stdout, steps.plan.outputs.stderr) }}
-        commenter_exitcode: ${{ steps.plan.outputs.exitcode }}
+        message: |
+          **Hello MAIN**
