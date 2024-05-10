@@ -1,13 +1,9 @@
 name: 'Terraform Plan'
 
 on:
-  workflow_dispatch:
-#  push:
-#    branches:
-#    - main
-#  pull_request:
-#    branches:
-#    - main
+  pull_request:
+    branches: [main]
+    types: [opened, reopened]
 
 jobs:
   terraform:
