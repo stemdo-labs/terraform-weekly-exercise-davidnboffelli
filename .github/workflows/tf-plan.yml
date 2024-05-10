@@ -22,8 +22,8 @@ jobs:
       with:
         creds: ${{ secrets.AZURE_CREDENTIALS }}
 
-    - name: Azure Logout
-      run: az logout
+#    - name: Azure Logout
+#      run: az logout
             
     - name: Setup Terraform
       uses: hashicorp/setup-terraform@v3
