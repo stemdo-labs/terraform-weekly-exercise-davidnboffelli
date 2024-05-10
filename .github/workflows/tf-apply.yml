@@ -2,7 +2,7 @@ name: 'Terraform Apply'
 
 on:
   push:
-    branches: [mainasdasd]
+    branches: [main]
     
 jobs:
   terraform:
