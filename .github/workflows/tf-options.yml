@@ -2,7 +2,14 @@ name: 'Terraform Plan + PR add comment'
 
 on:
   workflow_dispatch:
-
+    inputs:
+      name:
+        type: choice
+        description: Opción a aplicar
+        options: 
+        - plan
+        - apply
+        - destroy
 jobs:
   terraform:
     name: 'Terraform'
